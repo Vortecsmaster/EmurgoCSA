@@ -15,12 +15,20 @@ library
                       , JustRedeemerV2
                       , CustomTypedValidatorV2
                       , TestAPI
-    build-depends:      base ^>=4.14.1.0
+    build-depends:      attoparsec 
+                      , base ^>=4.14.1.0
+                      , blaze-html
+                      , blaze-markup
                       , aeson -any
                       , bytestring -any
+                      , base-compat
                       , containers -any
-                      , data-default 
+                      , data-default
+                      , directory 
                       , freer-extras -any
+                      , http-media
+                      , lucid
+                      , mtl
                       , playground-common -any
                       , plutus-contract -any
                       , plutus-ledger -any
@@ -34,6 +42,10 @@ library
                       , lens -any
                       , serialise
                       , servant
+                      , servant-server
+                      , string-conversions
+                      , wai
+                      , warp
     hs-source-dirs:   src
     default-language: Haskell2010
 
